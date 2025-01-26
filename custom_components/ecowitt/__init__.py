@@ -251,9 +251,9 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
 
         for component in ECOWITT_PLATFORMS:
             hass.async_create_task(
-                await hass.config_entries.async_forward_entry_setup(entry, component)
+                hass.config_entries.async_forward_entry_setup(entry, component)
             )
-
+        await hass.config_entries.async_forward_entry_setups(entry, ECOWITT_PLATFORMS)
         ecowitt_data[DATA_READY] = True
 
     async def _async_ecowitt_update_cb(weather_data):
