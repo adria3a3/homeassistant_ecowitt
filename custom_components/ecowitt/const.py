@@ -328,7 +328,7 @@ SENSOR_TYPES = {
     TYPE_WINDSPEEDKMH_A10: ("Wind Speed 10m Avg", UnitOfSpeed.KILOMETERS_PER_HOUR,
                             TYPE_SENSOR, None, "mdi:weather-windy", S_METRIC,
                             SensorStateClass.MEASUREMENT),
-    TYPE_WINDGUSTKMH: ("Wind Gust", UnitOfSpeed._KILOMETERS_PER_HOUR,
+    TYPE_WINDGUSTKMH: ("Wind Gust", UnitOfSpeed.KILOMETERS_PER_HOUR,
                        TYPE_SENSOR, None, "mdi:weather-windy", S_METRIC,
                        SensorStateClass.MEASUREMENT),
     TYPE_WINDSPEEDMPH: ("Wind Speed", UnitOfSpeed.MILES_PER_HOUR,
